@@ -19,6 +19,8 @@ RUN apt-get update -qq && \
 
 EXPOSE 5100
 
+COPY . /opt/PasswordPusher
+
 RUN gem install bundler
 
 WORKDIR ${APP_ROOT}
